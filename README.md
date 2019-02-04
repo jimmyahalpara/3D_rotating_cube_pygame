@@ -1,4 +1,5 @@
 # 3D_rotating_cube_pygame
+![Cube](https://github.com/jimmyahalpara/3D_rotating_cube_pygame/blob/master/ezgif.com-optimize.gif)
 In this code I have used pygame to draw a 3d rotating cube. The main challenge in this program is to draw 3d on 2d screen, that is pygame,is a 2d but in our case the coordinates of the cube are in 3d that is, x,y,z. So our main objective of the code is to convert the x,y,z coordinates to 2d x,y.
 Following code block will do this job in our program.
 
