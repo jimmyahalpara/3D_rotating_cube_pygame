@@ -21,9 +21,9 @@ def return_rendered_point(self,points,viewing_distance = 320):
         return (int(x),int(y))
 ```
 
-This return_rendered_point will take points (x,y,z), and viewing distance and return (x,y) coordinates. This function will also use three extra variables that is self.rotx, self.roty, self.rotz which stores the rotation angle for the three axis.
-Another challenge is the fill colors to the sides, we can use polygon method of the pygame to do that, but the hard thing is to print all the polygons in order so that, the polygon which is near to the screen or camara in 3d space should be printed at last on all other polygons and polygon far from screen should be printed first. 
-This problem can be solved by sorting the list containg the polygon objects in decreasing order of their length from polygons midpoint to the position, at middle of the screen.
+This return_rendered_point will take points (x,y,z), viewing distance and return (x,y) coordinates. This function will also use three extra variables that is self.rotx, self.roty, self.rotz which stores the rotation angle for the three axis.
+Another challenge is filling colors to the sides, we can use polygon method of pygame to do that, but the hard thing is to print polygons in order so that, the polygon which is near to the screen or camara, in 3d space should be printed at last on all other polygons and polygon far from screen should be printed first. 
+This problem can be solved by sorting the list containg the polygon objects in decreasing order of their length from polygon's midpoint to the position, at middle of the screen.
 The distance is calculated by the following function,
 
 
